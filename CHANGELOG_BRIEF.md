@@ -23,7 +23,7 @@ feed/target definition
 1. Active skill decontaminated for held-out testing
    - Removed C6-specific protocol and C6 forward-test fixture from the active skill.
    - Moved C6 files to `private_cases/`.
-   - Active skill no longer contains case-specific hints from the original C6 fixture.
+   - Active skill no longer contains `nHEX`, `HKUST/UiO/Zn-MOF` case-specific hints from the original C6 fixture.
 
 2. Chinese reading aids added
    - Added `cn/` documentation for easier reading.
