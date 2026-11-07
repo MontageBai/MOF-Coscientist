@@ -1,0 +1,40 @@
+{
+  "data_origin": "synthetic numerical example; not measured or simulated material performance",
+  "units": {"coordinate": "min", "component_load_rates": "mmol/min", "mass": "g"},
+  "threshold": 0.05,
+  "coordinate_column": "time_min",
+  "capacity_normalization": "divide_by_mass",
+  "integration_mode": "raw",
+  "upstream_material": "Synthetic-U",
+  "upstream_curve": {
+    "path": "U.csv",
+    "mass_g": 0.1,
+    "response_columns": {"B": "b_c_c0", "G1": "g1_c_c0", "G2": "g2_c_c0"}
+  },
+  "upstream_duty_components": ["B"],
+  "downstream_duty_components": ["G1", "G2"],
+  "component_load_rates": {"B": 0.2, "G1": 0.1, "G2": 0.05},
+  "downstream_candidates": [
+    {
+      "material": "Synthetic-D",
+      "curve": {
+        "path": "D.csv",
+        "mass_g": 0.05,
+        "response_columns": {"G1": "g1_c_c0", "G2": "g2_c_c0"}
+      }
+    }
+  ],
+  "feed_transfer": {
+    "layers": [
+      {
+        "name": "synthetic downstream scenario",
+        "baseline_mass_g": 0.05,
+        "duty_multiplier": 2.0,
+        "material_factor": {"low": 0.9, "base": 1.0, "high": 1.1},
+        "operation_factor": 1.0,
+        "uncertainty_factor": 1.0,
+        "basis": "synthetic factors for testing only; not an experimental transfer calibration"
+      }
+    ]
+  }
+}

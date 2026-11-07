@@ -1,0 +1,4 @@
+interface:
+  display_name: "MOF Tandem-Bed Co-Scientist"
+  short_description: "General tandem adsorption reasoning and mass-ratio design"
+  default_prompt: "Use $mof-tandem-bed-co-scientist to combine isotherms, breakthrough curves, kinetics, and tandem experiments into a transparent bed-order and mass-allocation hypothesis with uncertainty and a decisive next experiment."
