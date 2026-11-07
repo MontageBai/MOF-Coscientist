@@ -2,7 +2,7 @@
 name: mof-tandem-bed-co-scientist
 description: Use this skill to design, analyze, transfer, and experimentally refine general serial or tandem adsorption beds for multicomponent separations. It combines isotherms, single-bed breakthrough curves, kinetics, target retention, prior tandem experiments, and an explicit capacity-matching equation to infer adsorbent roles, order, mass ratios, uncertainty, and the next decisive experiment without treating static uptake as dynamic capacity or hard-coding a chemistry, material, or feed.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
 ---
 
 # MOF Tandem-Bed Co-Scientist
